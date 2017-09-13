@@ -1,0 +1,28 @@
+﻿@model Todo01._01vercion.Models.IndexViewModel
+@{
+    ViewBag.Title = Resources.Resource.ManageIndTitle;
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>@Resources.Resource.ManageIndText</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>@Resources.Resource.Password:</dt>  
+        <dd>
+            [
+            @if (Model.HasPassword)
+            {
+                @Html.ActionLink(Resources.Resource.ManageIndLink, "ChangePassword")
+            }
+            else
+            {
+                @Html.ActionLink("Create", "SetPassword")
+            }
+            ]
+        </dd>
+       
+    </dl>
+</div>

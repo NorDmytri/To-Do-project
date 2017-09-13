@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = Resources.Resource.ConfMailTitle;
+}
+
+<h2>@ViewBag.Title.</h2>
+<div>
+    <p>
+        @Resources.Resource.ConfMailText @Html.ActionLink(Resources.Resource.ConfMailLinkText, "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+    </p>
+</div>

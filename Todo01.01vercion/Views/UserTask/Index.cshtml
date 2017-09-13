@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Todo01._01vercion.Models.UserTask>
+
+@{
+    ViewBag.Title = "Index";
+
+}
+
+
+@using (Html.BeginForm())
+{
+<p>
+    @Html.ActionLink(Resources.Resource.CreateNewLink, "Create")
+</p>
+      
+     <div class="form-group">
+        @Resources.Resource.CreateSelectDate:
+        <input id="calendar" type="date" name="calendar" value="2017-09-01"
+               max="3000-00-00" min="1900-00-00">
+        <input type="submit" value="@Resources.Resource.CreateButFilter" class="class="btn btn-default"">
+    </div>
+    <div class="form-group">
+        @Html.ActionLink(Resources.Resource.UsTaskIndexAll,"Index")
+    </div>
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TaskDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaskTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaskTitle)
+        </th>
+        <th>
+            @Resources.Resource.TaskIndexMap
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Taskdescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+     </thead>
+    <tbody id="tabeldata">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaskDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaskTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaskTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UseMap)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Taskdescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.ActionLink(Resources.Resource.CreateLinkEdit, "Edit", new { id = item.UserTaskId }) |
+                    @Html.ActionLink(Resources.Resource.CreateLinkDetails, "Details", new { id = item.UserTaskId }) |
+                    @Html.ActionLink(Resources.Resource.CreateLinkDelete, "Delete", new { id = item.UserTaskId })
+                </td>
+            </tr>
+        }
+    </tbody>
+    
+
+</table>
+}

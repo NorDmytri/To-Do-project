@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Todo01._01vercion.Models.UserTask>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaskDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaskTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaskTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UseMap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Taskdescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.UserTaskId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.UserTaskId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.UserTaskId })
+        </td>
+    </tr>
+}

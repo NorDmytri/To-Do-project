@@ -1,0 +1,108 @@
+﻿@model Todo01._01vercion.Models.UserTask
+
+@{
+    ViewBag.Title = Resources.Resource.DetailsTitle;
+}
+<style>
+    /* Always set the map height explicitly to define the size of the div
+        * element that contains the map. */
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+</style>
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <h4>@Resources.Resource.Task</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TaskDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaskDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaskTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaskTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaskTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaskTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UseMap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UseMap)
+        </dd>  
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Taskdescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Taskdescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd> 
+    </dl>
+    @Html.HiddenFor(model => model.MapPoin.MapLat)
+    @Html.HiddenFor(model => model.MapPoin.Maplng)
+    @Html.HiddenFor(model => model.MapPoin.MapTitle)
+    @Html.HiddenFor(model => model.UseMap)
+</div>
+<div style="border: 5px solid grey; width:40%; height:40%; ">
+    <div id="map"></div>
+</div>
+    
+<script>
+    var mTitle = document.getElementById('MapPoin_MapTitle').value;
+    function initMap() {
+        var usemap = document.getElementById('UseMap').value;
+        if (usemap === "True") {
+            var v1 = document.getElementById('MapPoin_MapLat').value;
+            var v2 = document.getElementById('MapPoin_Maplng').value;
+
+            var myLatLng = { lat: +v1, lng: +v2 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: mTitle
+            });
+        }
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUX1NO7lpfr3Fi_7CrjClj70-GHzJq1Bg&callback=initMap">
+</script>
+
+
+<p>
+    @Html.ActionLink(Resources.Resource.CreateLinkEdit, "Edit", new { id = Model.UserTaskId }) |
+    @Html.ActionLink(Resources.Resource.BackToList, "Index")
+</p>

@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChooseLang" xml:space="preserve">
+    <value>Выберете язык </value>
+  </data>
+  <data name="HaveTasks" xml:space="preserve">
+    <value>Заданий </value>
+  </data>
+  <data name="HaveUsers" xml:space="preserve">
+    <value>Пользователей</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Здравствуй </value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="LoginViewTitle" xml:space="preserve">
+    <value>Используйте учетную запись для входа в систему.</value>
+  </data>
+  <data name="LogOff" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="PersonalCabinet" xml:space="preserve">
+    <value>Личный кабинет</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="Remember" xml:space="preserve">
+    <value>Запомнить меня?</value>
+  </data>
+  <data name="WebApplication" xml:space="preserve">
+    <value>Web приложение</value>
+  </data>
+  <data name="BackToList" xml:space="preserve">
+    <value>Возврат к списку</value>
+  </data>
+  <data name="ChangePass" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="ConfMailLinkText" xml:space="preserve">
+    <value>Кликните здесь чтоб войти</value>
+  </data>
+  <data name="ConfMailText" xml:space="preserve">
+    <value>Благодарим вас за подтверждение вашей электронной почты. пожалуйста </value>
+  </data>
+  <data name="ConfMailTitle" xml:space="preserve">
+    <value>Подтверждение электронного адреса </value>
+  </data>
+  <data name="ConfNewPass" xml:space="preserve">
+    <value>Подтвердите новый пароль</value>
+  </data>
+  <data name="ConfNewPassErr" xml:space="preserve">
+    <value>Новый пароль и пароль подтверждения не совпадают.</value>
+  </data>
+  <data name="CreateBut" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="CreateButFilter" xml:space="preserve">
+    <value>Отфильтровать</value>
+  </data>
+  <data name="CreateLinkDelete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="CreateLinkDetails" xml:space="preserve">
+    <value>Подробная информация</value>
+  </data>
+  <data name="CreateLinkEdit" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="CreateMapButDel" xml:space="preserve">
+    <value>Удалить макер</value>
+  </data>
+  <data name="CreateMapTitle" xml:space="preserve">
+    <value>Нажмите на карту, чтобы добавить маркер.</value>
+  </data>
+  <data name="CreateNewLink" xml:space="preserve">
+    <value>Создать Новую Задачу</value>
+  </data>
+  <data name="CreateSelectDate" xml:space="preserve">
+    <value>Выберите дату</value>
+  </data>
+  <data name="CreateTitle" xml:space="preserve">
+    <value>Создание новой задачи</value>
+  </data>
+  <data name="CurrentPass" xml:space="preserve">
+    <value>Текущий пароль</value>
+  </data>
+  <data name="DeleteText" xml:space="preserve">
+    <value>Вы уверенны что хотите удалить это задание?</value>
+  </data>
+  <data name="DeleteTitle" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="DetailsTitle" xml:space="preserve">
+    <value>Подробная информация</value>
+  </data>
+  <data name="DispleyEmailText" xml:space="preserve">
+    <value>На указанный электронный адрес отправлены дальнейшие инструкции по завершению регистрации.</value>
+  </data>
+  <data name="EditButSave" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="EditTitle" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Эл. адрес</value>
+  </data>
+  <data name="ErrorText" xml:space="preserve">
+    <value>Во время обработки Вашего запроса произошла ошибка.</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ForgPassButt" xml:space="preserve">
+    <value>Отправить ссылку на почту</value>
+  </data>
+  <data name="ForgPassConfText" xml:space="preserve">
+    <value>Проверьте свой адрес электронной почты, чтобы сбросить пароль.</value>
+  </data>
+  <data name="ForgPassText" xml:space="preserve">
+    <value>Введите адрес электронной почты.</value>
+  </data>
+  <data name="ForgPassTitle" xml:space="preserve">
+    <value>Забыли пароль ?</value>
+  </data>
+  <data name="LockedOutText" xml:space="preserve">
+    <value>Эта учетная запись заблокирована, повторите попытку позже.</value>
+  </data>
+  <data name="LockedOutTitle" xml:space="preserve">
+    <value>Досступ закрыт</value>
+  </data>
+  <data name="LoginForgot" xml:space="preserve">
+    <value>Забыли пароль?</value>
+  </data>
+  <data name="LoginRegisterAsANewUser" xml:space="preserve">
+    <value>Зарегистрировать нового пользователя</value>
+    <comment>account,Login</comment>
+  </data>
+  <data name="ManageIndLink" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="ManageIndSecss" xml:space="preserve">
+    <value>Ваш пароль успешно изменен.</value>
+  </data>
+  <data name="ManageIndText" xml:space="preserve">
+    <value>Изменение настроек учетной записи</value>
+  </data>
+  <data name="ManageIndTitle" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="MapLat" xml:space="preserve">
+    <value>Широта</value>
+  </data>
+  <data name="MapLatErr" xml:space="preserve">
+    <value>Карта "Долгота" Неправильное значение</value>
+  </data>
+  <data name="Maplng" xml:space="preserve">
+    <value>Долгота</value>
+  </data>
+  <data name="MaplngErr" xml:space="preserve">
+    <value>Карта "Широта" Неправильное значение</value>
+  </data>
+  <data name="MapPoin" xml:space="preserve">
+    <value>Tочка на карте</value>
+  </data>
+  <data name="MapTitle" xml:space="preserve">
+    <value>Заголовок точки</value>
+  </data>
+  <data name="NeedLoginText" xml:space="preserve">
+    <value>Время вашей сессии закончено, и у вас нет необходимых куки. Для дальнейшей правильной работы войдите в систему.</value>
+  </data>
+  <data name="NeedLoginTitle" xml:space="preserve">
+    <value>Нужно зайти еще раз в учетную запись</value>
+  </data>
+  <data name="NewPass" xml:space="preserve">
+    <value>Новый пароль</value>
+  </data>
+  <data name="RegComments" xml:space="preserve">
+    <value>Комментарии</value>
+  </data>
+  <data name="RegCommentsLen" xml:space="preserve">
+    <value>Максимальная длина поля "Коментарии" не может превышать 100 символов.</value>
+  </data>
+  <data name="RegConfirmPassword" xml:space="preserve">
+    <value>Подтверждение пароля</value>
+  </data>
+  <data name="RegConfirmPasswordErr" xml:space="preserve">
+    <value>Пароль и подтверждение пароля не совпадают.</value>
+  </data>
+  <data name="RegCreate" xml:space="preserve">
+    <value>Создание нового аккаунта.</value>
+  </data>
+  <data name="RegName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="RegNameLen" xml:space="preserve">
+    <value>Максимальная длина поля "Имя" не может превышать 100 символов.</value>
+  </data>
+  <data name="RegPasswordLen" xml:space="preserve">
+    <value>Минимальная длина пароля должна быть не менее 6 символов.</value>
+  </data>
+  <data name="RegPatronymic" xml:space="preserve">
+    <value>Отчество</value>
+  </data>
+  <data name="RegPatronymicLen" xml:space="preserve">
+    <value>Максимальная длина поля "Отчество" не может превышать 100 символов.</value>
+  </data>
+  <data name="RegPhone" xml:space="preserve">
+    <value>Номер телефона</value>
+  </data>
+  <data name="RegSurname" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="RegSurnameLen" xml:space="preserve">
+    <value>Максимальная длина поля "Фамилия" не может превышать 100 символов.</value>
+  </data>
+  <data name="ResetPassButt" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="ResetPassConfLink" xml:space="preserve">
+    <value>Кликните здесь чтоб войти</value>
+  </data>
+  <data name="ResetPassConfText" xml:space="preserve">
+    <value>Ваш пароль был сброшен. пожалуйста</value>
+  </data>
+  <data name="ResetPassText" xml:space="preserve">
+    <value>Установите новый пароль.</value>
+  </data>
+  <data name="ResetPassTitle" xml:space="preserve">
+    <value>Сброс пароля</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="StatusAbolished" xml:space="preserve">
+    <value>Отменена</value>
+  </data>
+  <data name="StatusAccomplished" xml:space="preserve">
+    <value>Выполнена</value>
+  </data>
+  <data name="StatusNotImplemented" xml:space="preserve">
+    <value>Не выполнена</value>
+  </data>
+  <data name="StatusPending" xml:space="preserve">
+    <value>В ожидании</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Задание</value>
+  </data>
+  <data name="TaskDate" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="TaskDateErr" xml:space="preserve">
+    <value>Дата недействительна, введите год 1900- 3000</value>
+  </data>
+  <data name="Taskdescription" xml:space="preserve">
+    <value>Описание задачи</value>
+  </data>
+  <data name="TaskdescriptionErr" xml:space="preserve">
+    <value>Максимальная длина поля "Описание задачи" не может превышать 1000 символов.</value>
+  </data>
+  <data name="TaskIndexMap" xml:space="preserve">
+    <value>Используется карта</value>
+  </data>
+  <data name="TaskTime" xml:space="preserve">
+    <value>Время</value>
+  </data>
+  <data name="TaskTitle" xml:space="preserve">
+    <value>Краткое описание задачи</value>
+  </data>
+  <data name="TaskTitleErr" xml:space="preserve">
+    <value>Максимальная длина поля "Краткое описание задачи" не может превышать 100 символов.</value>
+  </data>
+  <data name="UseMap" xml:space="preserve">
+    <value>Я хочу использовать карту</value>
+  </data>
+  <data name="UsTaskIndexAll" xml:space="preserve">
+    <value>Показать все задачи</value>
+  </data>
+  <data name="NotConfirmedEmail" xml:space="preserve">
+    <value>Email не подтвержден</value>
+  </data>
+  <data name="WrongLogPass" xml:space="preserve">
+    <value>Не верный логин или пароль</value>
+  </data>
+</root>
